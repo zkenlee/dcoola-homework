@@ -1,0 +1,35 @@
+{
+  "name": "dcoola-homework",
+  "version": "0.1.0",
+  "description": "微信群聊天数据收集系统",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "test": "jest",
+    "test:integration": "jest integration/",
+    "test:prod": "cross-env NODE_ENV=production jest"
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-xml-bodyparser": "^0.3.0",
+    "mongoose": "^6.0.0",
+    "winston": "^3.3.3",
+    "xml2js": "^0.4.23"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.0",
+    "@babel/plugin-transform-modules-commonjs": "^7.26.3",
+    "@babel/preset-env": "^7.15.0",
+    "@babel/preset-typescript": "^7.15.0",
+    "@types/jest": "^27.0.1",
+    "autocannon": "^7.0.0",
+    "babel-jest": "^27.0.6",
+    "cross-env": "^7.0.3",
+    "jest": "^27.0.6",
+    "mongodb-memory-server": "^8.12.2",
+    "nodemon": "^2.0.15",
+    "supertest": "^6.1.3"
+  }
+}
